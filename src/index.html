@@ -12,12 +12,16 @@
     />-->
   </head>
   <body>
-    <h2 class="task__title">Вітаємо!!!</h2>
+    <h2 class="country__title">Вітаємо!!!</h2>
 
-    <p class="task__text-text">Тут ви можете створити свій список завдань.</p>
-    <div class="task__container">
-      <ul class="task__list"></ul>
-      <button class="btn__task-create button">Створити нове завдання</button>
+    <p class="country__text">Тут ви можете створити свій список завдань.</p>
+    <div class="country__container">
+      <form action="submit" class="js-search">
+        <input type="text" />
+        <button class="">Пошук</button>
+      </form>
+      <button class="js-add">Додати країну</button>
+      <ul class="js__list"></ul>
     </div>
 
     <script type="module" src="./js/index.js"></script>
