@@ -1,0 +1,125 @@
+@import './common';
+@media screen and (min-width: 320px) {
+  ul {
+    list-style: none;
+  }
+  h2,
+  p {
+    margin: 0;
+  }
+
+  .task__list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  .task__time-inner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .task__item {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+    background-color: #fff;
+    border: 2px solid #149cf1;
+    border-radius: 10px;
+  }
+  .task {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    padding: 15px 10px 10px 10px;
+  }
+  .task__text-input {
+    position: relative;
+    font-size: 14px;
+    border: none;
+    border-bottom: 1px solid #05619b;
+    border-radius: 6px;
+  }
+
+  .task__text-name {
+    padding: 10px;
+    width: 100%;
+    height: 70px;
+    color: #042b5b;
+    font-size: 14px;
+    font-weight: 500;
+    border-top: 1px solid #d6dbdb;
+
+    border: none;
+  }
+  .task__label-text {
+    font-size: 14px;
+    left: 0px;
+    position: absolute;
+    bottom: 120px;
+  }
+  .task__time-left {
+    position: relative;
+  }
+  .task__text {
+    display: block;
+    border-bottom: 1px solid #a0d8eb;
+  }
+  .task__title {
+    color: #05618b;
+  }
+  .task__text-text {
+    color: #0a6ead;
+  }
+
+  .task__label {
+    position: absolute;
+    left: 0px;
+    top: -14px;
+    font-size: 12px;
+    color: #b3aeae;
+  }
+  .time-left__label {
+    position: absolute;
+    bottom: 22px;
+    left: 0px;
+    font-size: 11px;
+    color: #b3aeae;
+    display: none;
+  }
+  .button {
+    background-color: #149cf1;
+    border: #149cf1;
+    color: #fff;
+    padding: 3px 7px;
+    border-radius: 4px;
+  }
+
+  .task__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .btn__task-create {
+    margin-top: 40px;
+    padding: 7px 15px;
+    background-color: #05619b;
+  }
+}
+@media screen and (min-width: 540px) {
+  .task__time-inner {
+    flex-direction: row;
+  }
+  .task {
+    flex-direction: row;
+  }
+  .task__label {
+    top: -23px;
+  }
+}
